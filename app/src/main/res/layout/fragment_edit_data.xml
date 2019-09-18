@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".EditDataFragment">
+
+<LinearLayout
+    android:id="@+id/LineButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/BtnAdd"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tambah" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BtnEdit"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="@string/edit" />
+
+            <Button
+                android:id="@+id/BtnDelete"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="@string/delete" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/LineButton"
+    android:gravity="center"
+    android:text="@string/isi_list_mahasiswa"
+    android:background="@color/colorPrimary"
+    android:textColor="#ffffff"/>
+</RelativeLayout>
+
+
+
